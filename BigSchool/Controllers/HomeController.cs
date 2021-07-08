@@ -22,6 +22,7 @@ namespace BigSchool.Controllers
                 .Include(c=>c.Lecturer)
                 .Include(c=>c.Category)
                 .Where(a => a.DateTime > DateTime.Now);
+
             return View(upcommingCourses);
         }
         public ActionResult About()
