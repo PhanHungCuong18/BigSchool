@@ -24,8 +24,7 @@ namespace BigSchool.ViewModels
 
         public DateTime GetDateTime()
         {
-            DateTime condate= DateTime.Parse(string.Format("{0}{1}",Date,Time));
-            return (condate);
+            return DateTime.Parse(string.Format("{0} {1}", Date, Time));
         }
     }
 
